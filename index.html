@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge Dictionary</title>
+    <title>Lightning Bridge Dictionary</title>
 
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
@@ -11,11 +11,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="imagens/bolt-lightning-solid.svg">
 </head>
 <body>
+    <!-- ********** -->
+    <!-- * HEADER * -->
+    <!-- ********** -->
     <header>
-
-        <nav class="flex flex-row justify-between bg-cyan-700 text-white font-bold p-6" >
+        <nav class="flex flex-row justify-between bg-sky-600 text-white font-bold p-6" >
             <ul class="flex flex-row gap-4" >
                     <li >
                         <i class="fa-solid fa-bars"></i>
@@ -37,7 +41,8 @@
                     </li>
     
                     <li>
-                        Shop <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Shop <sup><i 
+                            class="fa-solid fa-arrow-up-right-from-square"></i></sup>
                     </li>
             </ul>
 
@@ -66,60 +71,150 @@
         <!-- ****** -->
         <!-- SEARCH -->
         <!-- ****** -->
-        <section>
+        <section class="flex flex-row justify-between p-7
+        bg-gradient-to-r from-cyan-500 to-blue-500" >
 
-            <div>
-                <h1>
-                    Bridge Dictionary
-                </h1>
-
-                <h2>
-                    Be happy in your work
-                </h2>
+            <div class="flex flex-row">
+                <div>
+                    <img class="w-32"
+                    src="imagens/Blason_Pont-de-Claix.svg.png" alt="">
+                </div>
+    
+                <div class="p-7 text-white font-semibold">
+                    <h1 class="p-1 text-2xl max-w-48">
+                        Lightning Bridge Dictionary
+                    </h1>
+    
+                    <h2 class="p-1 text-lg">
+                        Be happy in your work
+                    </h2>
+                </div>
             </div>
-
-            <hr>
-
-            <div>
+            
+            <div class="p-7" >
                 <search>
-                    <form action="./search-word/">
-         
-                      <input type="search" id="search-word" name="search-word" placeholder="Search English"/>
+                    <form action="search-word">
+                        
+                        <div class="pt-1 pb-1 flex flex-row h-12 flex-nowrap">
+                            <input class="w-96  rounded-l-2xl
+                            placeholder:pl-4"
+                            type="search" id="search-word" name="search-word" 
+                            placeholder="Search English"/>
 
-                      <button>
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                      <br>
-                      <button>English</button>
-                      <button>English-Spanish</button>
-                      <button>Spanish-English</button>
+                            <button type="button"
+                            class="pr-4 bg-white">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                            <button type="button"
+                            class="bg-white rounded-r-2xl pr-4 flex flex-row
+                             flex-nowrap items-center">
+                    
+                                    English <i class="pl-4 fa-solid fa-ellipsis-vertical"></i>
+                             
+                            </button>
+
+                            <button 
+                            class="bg-yellow-300 flex items-center justify-center
+                            rounded-3xl font-extrabold w-1.5 h-1.5 p-5 text-center ml-2"
+                                type="submit">
+                                <i class=" fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                        </div>
+                      
+
+
+                      <div class="text-white font-semibold">
+
+                        <button class="bg-blue-700 pl-3 pr-3 pt-1 pb-1 rounded-3xl"
+                        type="button">
+                            English
+                        </button>
+
+                          <button class="bg-blue-700 pl-3 pr-3 pt-1 pb-1 rounded-3xl"
+                          type="button">
+                            English-Spanish
+                        </button>
+
+                          <button class="bg-blue-700 pl-3 pr-3 pt-1 pb-1 rounded-3xl"
+                          type="button">
+                            Spanish-English
+                        </button>
+                      </div>
+
                     </form>
-                  </search>
+
+
+                </search>
             </div>
 
-            <hr>
-           
         </section>
     </main>
 
     <footer>
+
+        <br>
+
   
+        <section class="flex flex-row gap-10 p-6">
             <ul>
-            <li>
-                Learn
-            </li>
-        </ul>
+                <li class="uppercase pb-3">
+                    Learn
+                </li>
 
-        <ul>
-            <li>
-                Develop
-            </li>
-        </ul>
+                <li>
+                    New Words
+                </li>
 
-        <ul>
-            About
-        </ul>
+                <li>
+                    Help
+                </li>
+
+                <li>
+                    In Print
+                </li>
+
+                <li>
+                    Word of the Year 2021
+                </li>
+
+                <li>
+                    Word of the Year 2022
+                </li>
+
+                <li>
+                    Word of the Year 2023
+                </li>
+
+            </ul>
+    
+            <ul>
+                <li class="uppercase pb-3">
+                    Develop
+                </li>
+
+                <li>Dictionary API</li>
+                <li>Double-Click Lookup</li>
+                <li>Search Widgets</li>
+                <li>Licence Data</li>
+            </ul>
+    
+            <ul>
+                <li class="uppercase pb-3">
+                    About
+                </li>
+
+                <li>Accessibility</li>
+                <li>Cambridge English</li>
+                <li>Cambridge University Press & Assessment</li>
+                <li>Gerir preferências</li>
+                <li>Cookies and Privacy</li>
+                <li>Corpus</li>
+                <li>Terms of Use</li>
+            </ul>
+        </section>
+       
 
     </footer>
 </body>
