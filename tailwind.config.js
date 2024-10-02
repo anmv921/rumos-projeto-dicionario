@@ -4,7 +4,12 @@ module.exports = {
     './*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'shadows': 'Shadows Into Light',
+        'roboto': 'Roboto'
+      }
+    },
   },
   plugins: [],
 }
