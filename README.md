@@ -15,3 +15,13 @@ in tailwind.config.js added ''./*.html' to content so that tailwind styles are a
 to run the script we use: 
 
 >npm run build-css
+
+The images used are from pixabay or wikimedia, licence should not be an issue
+
+The font used is roboto, from google fonts;
+
+The icons used are from font awesome.
+
+The site can be run with npm -> command live-server
+
+live server is installed with -> npm install -g live-server
